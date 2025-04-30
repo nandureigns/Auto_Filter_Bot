@@ -2,345 +2,169 @@ class script(object):
     START_TXT = """<b>𝙷𝙴𝙻𝙻𝙾 {},\n
 <quote>𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,</quote>\n
 <spoiler>𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈😍</spoiler></b>"""
-
-     ABOUT_TXT = """<b>
+    
+    HELP_TXT = """<b>𝙷𝙴𝚈 {}
+𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
+    
+    ABOUT_TXT = """<b>
 ◎ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/NANDAN_REIGNS>Nᴀɴᴅᴀɴ Rᴇɪɢɴs</a>
 ◎ Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
 ◎ Dᴀᴛᴀ Bᴀsᴇ: Mᴏɴɢᴏ DB
 ◎ Bᴏᴛ Sᴇʀᴠᴇʀ: KoYeb</b>"""
     SOURCE_TXT = """<b><quote>കൊട്ക്ക്ണില്ല്യാ...... </quote></b>"""
-
-   MANUELFILTER_TXT = """Help: <b>Filters</b>
+    
+    MANUELFILTER_TXT = """Help: <b>Filters</b>
 - Filter is the feature were users can set automated replies for a particular keyword and shobana will respond whenever a keyword is found the message
 <b>NOTE:</b>
 1. This Bot should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
- 
-    FORCESUB_TEXT="""<b>
-ɪɴ ᴏʀᴅᴇʀ ᴛᴏ ɢᴇᴛ ᴛʜᴇ ᴍᴏᴠɪᴇ ʀᴇᴏ̨ᴜᴇsᴛᴇᴅ ʙʏ ʏᴏᴜ.
 
-ʏᴏᴜ ᴡɪʟʟ ʜᴀᴠᴇ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴏғғɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ.
+<b>Commands and Usage:</b>
+• /filter - <code>add a filter in chat</code>
+• /filters - <code>list all the filters of a chat</code>
+• /del - <code>delete a specific filter in chat</code>
+• /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+    BUTTON_TXT = """Help: <b>Buttons</b>
 
-ғɪʀsᴛ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ "Jᴏɪɴ ᴜᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ" ʙᴜᴛᴛᴏɴ, ᴛʜᴇɴ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ "ʀᴇᴏ̨ᴜᴇsᴛ ᴛᴏ Jᴏɪɴ" ʙᴜᴛᴛᴏɴ.
+- This Bot Supports both url and alert inline buttons.
 
-ᴀғᴛᴇʀ ᴛʜᴀᴛ, ᴛʀʏ ᴀᴄᴄᴇssɪɴɢ ᴛʜᴀᴛ ᴍᴏᴠɪᴇ ᴛʜᴇɴ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ "ᴛʀʏ ᴀɢᴀɪɴ" ʙᴜᴛᴛᴏɴ.
-    </b>"""
-           
-    MULTI_STATUS_TXT = """<b>╭────[ ᴅᴀᴛᴀʙᴀsᴇ 1 ]────⍟</b>
-│
-├⋟ ᴀʟʟ ᴜsᴇʀs ⋟ <code>{}</code>
-├⋟ ᴀʟʟ ɢʀᴏᴜᴘs ⋟ <code>{}</code>
-├⋟ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ⋟ <code>{}</code>
-├⋟ ᴀʟʟ ꜰɪʟᴇs ⋟ <code>{}</code>
-├⋟ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ ⋟ <code>{}</code>
-├⋟ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ ⋟ <code>{}</code>
-│
-<b>├────[ ᴅᴀᴛᴀʙᴀsᴇ 2 ]────⍟</b>   
-│
-├⋟ ᴀʟʟ ꜰɪʟᴇs ⋟ <code>{}</code>
-├⋟ ꜱɪᴢᴇ ⋟ <code>{}</code>
-├⋟ ꜰʀᴇᴇ ⋟ <code>{}</code>
-│
-<b>├────[ 🤖 ʙᴏᴛ ᴅᴇᴛᴀɪʟs 🤖 ]────⍟</b>   
-│
-├⋟ ᴜᴘᴛɪᴍᴇ ⋟ {}
-├⋟ ʀᴀᴍ ⋟ <code>{}%</code>
-├⋟ ᴄᴘᴜ ⋟ <code>{}%</code>   
-│
-├⋟ ʙᴏᴛʜ ᴅʙ ꜰɪʟᴇ'ꜱ: <code>{}</code>
-│
-<b>╰─────────────────────⍟</b>"""
+<b>NOTE:</b>
+1. Telegram will not allows you to send buttons without any content, so content is mandatory.
+2. This Bot supports buttons with any telegram media type.
+3. Buttons should be properly parsed as markdown format
 
-    STATUS_TXT = """<b>╭────[ ᴅᴀᴛᴀʙᴀsᴇ 1 ]────⍟</b>
-│
-├⋟ ᴀʟʟ ᴜsᴇʀs ⋟ <code>{}</code>
-├⋟ ᴀʟʟ ɢʀᴏᴜᴘs ⋟ <code>{}</code>
-├⋟ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ ⋟ <code>{}</code>
-├⋟ ᴀʟʟ ꜰɪʟᴇs ⋟ <code>{}</code>
-├⋟ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ ⋟ <code>{}</code>
-├⋟ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ ⋟ <code>{}</code>
-│
-<b>├────[ 🤖 ʙᴏᴛ ᴅᴇᴛᴀɪʟs 🤖 ]────⍟</b>   
-│
-├⋟ ᴜᴘᴛɪᴍᴇ ⋟ {}
-├⋟ ʀᴀᴍ ⋟ <code>{}%</code>
-├⋟ ᴄᴘᴜ ⋟ <code>{}%</code>   
-│
-<b>╰─────────────────────⍟</b>"""
+<b>URL buttons:</b>
+<code>[Button Text](buttonurl:https://github.com/mn-bots/ShobanaFilterBot)</code>
 
-    EARN_INFO = """<b><i><blockquote>💸 ʜᴏᴡ ᴛᴏ ᴇᴀʀɴ ᴍᴏɴᴇʏ ʙʏ ᴛʜɪs ʙᴏᴛ - </blockquote>
+<b>Alert buttons:</b>
+<code>[Button Text](buttonalert:This is an alert message)</code>"""
+    AUTOFILTER_TXT = """
 
-1:- ʏᴏᴜ ᴍᴜꜱᴛ ʜᴀᴠᴇ ᴀᴛʟᴇᴀꜱᴛ ᴏɴᴇ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴍɪɴɪᴍᴜᴍ 100 ᴍᴇᴍʙᴇʀꜱ.
-
-2:- ᴍᴀᴋᴇ <a href=https://t.me/{}</a> ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-
-3:- ᴄʀᴇᴀᴛᴇ ᴀᴄᴄᴏᴜɴᴛ ᴏɴ ᴀɴʏ sʜᴏʀᴛɴᴇʀ ʟɪᴋᴇ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴜsᴇ ᴛʜɪs ʙᴇsᴛ sʜᴏʀᴛɴᴇʀ <a href=https://zipshort.net/ref/noyanbanerjee>ᴢɪᴘꜱʜᴏʀᴛ</a>.
-
-4:- ᴛʜᴇɴ sᴇᴛ ʏᴏᴜʀ sʜᴏʀᴛɴᴇʀ ᴅᴇᴛᴀɪʟs ʙʏ ᴛʜɪs ꜰᴏʀᴍᴀᴛ 👇
-
-<code>/set_shortner omegalinks.in a7ac9b3012c67d7491414cf272d82593c75f6cbb</code>
-
-<code>/set_shortner_2 mdiskshortner.link e7beb3c8f756dfa15d0bec495abc65f58c0dfa95</code>
-
-<code>/set_shortner_3 mdiskshortner.link e7beb3c8f756dfa15d0bec495abc65f58c0dfa95</code>
-
-<code>/set_tutorial https://t.me/DwldMS/19</code>
-
-<code>/set_tutorial_2 https://t.me/DwldMS/20</code>
-
-<code>/set_tutorial_3 https://t.me/DwldMS/20</code>
-
-<code>/set_time 300</code>
-
-<code>/set_time_2 300</code>
-
-<code>/set_log_channel -100*******</code>
-
-<code>/set_fsub -100*******</code>
-
-ʏᴏᴜ ᴄᴀɴ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀʟʟ ᴅᴇᴛᴀɪʟs ʙʏ /details ᴄᴏᴍᴍᴀɴᴅ
-
-💯 ɴᴏᴛᴇ - ᴛʜɪs ʙᴏᴛ ɪs ꜰʀᴇᴇ ᴛᴏ ᴀʟʟ, ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘs ᴀɴᴅ ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ.</i></b>"""    
-    
-
-    SETTING_TXT = """    
-<u>ꜱᴇᴛᴛɪɴɢꜱ</u> :
-- ꜱᴇᴛᴛɪɴɢꜱ ɪꜱ ᴛʜᴇ ᴍᴏꜱᴛ ɪᴍᴘᴏʀᴛᴀɴᴛ ꜰᴇᴀᴛᴜʀᴇ ᴏꜰ ᴛʜɪꜱ ʙᴏᴛ.
-- ʏᴏᴜ ᴄᴀɴ ᴇᴀꜱɪʟʏ ᴄᴜꜱᴛᴏᴍɪᴢᴇ ᴛʜɪꜱ ʙᴏᴛ ꜰᴏʀ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-
-<u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ</u> :
-• /settings - ᴄʜᴀɴɢᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ ᴀꜱ ʏᴏᴜʀ ᴡɪꜱʜ.
-• /set_shortner - ꜱᴇᴛ ʏᴏᴜʀ 1ꜱᴛ ꜱʜᴏʀᴛɴᴇʀ.
-• /set_shortner_2 - ꜱᴇᴛ ʏᴏᴜʀ 2ɴᴅ ꜱʜᴏʀᴛɴᴇʀ.
-• /set_shortner_3 - ꜱᴇᴛ ʏᴏᴜʀ 3ʀᴅ ꜱʜᴏʀᴛɴᴇʀ.
-• /set_tutorial - ꜱᴇᴛ ʏᴏᴜʀ 1ꜱᴛ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ .
-• /set_tutorial_2 - ꜱᴇᴛ ʏᴏᴜʀ 2ɴᴅ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ .
-• /set_tutorial_3 - ꜱᴇᴛ ʏᴏᴜʀ 3ʀᴅ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ .
-• /set_time - ꜱᴇᴛ 1ꜱᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ɢᴀᴘ.
-• /set_time_2 - ꜱᴇᴛ 2ɴᴅ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ɢᴀᴘ.
-• /set_log_channel - ꜱᴇᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ʟᴏɢ ᴄʜᴀɴɴᴇʟ.
-• /set_fsub - ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ꜰᴏʀᴄᴇ ꜱᴜʙ ᴄʜᴀɴɴᴇʟ.
-• /remove_fsub - ʀᴇᴍᴏᴠᴇ ᴄᴜꜱᴛᴏᴍ ꜰᴏʀᴄᴇ ꜱᴜʙ ᴄʜᴀɴɴᴇʟ.
-• /reset_group - ʀᴇꜱᴇᴛ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ.
-• /details - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ."""
-    
-     ALL_FILTERS = """
-ʜᴇʏ {}, ᴛʜɪꜱ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇꜱ ᴏꜰ ꜰɪʟᴛᴇʀꜱ."""
-    
-    GFILTER_TXT = """
-ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ . ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ ᴀʀᴇ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ꜱᴇᴛ ʙʏ ʙᴏᴛ ᴀᴅᴍɪɴꜱ ᴡʜɪᴄʜ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴀʟʟ ɢʀᴏᴜᴘꜱ.
-
-<u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ</u> :
-• /gfilter - Tᴏ ᴄʀᴇᴀᴛᴇ ᴀ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ.
-• /gfilters - Tᴏ ᴠɪᴇᴡ ᴀʟʟ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ.
-• /delg - Tᴏ ᴅᴇʟᴇᴛᴇ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ.
-• /delallg - ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ."""
-
-    MANUELFILTER_TXT = """ʜᴇʟᴘ: <u>ꜰɪʟᴛᴇʀꜱ</u>
-- ꜰɪʟᴛᴇʀ ɪꜱ ᴀ ꜰᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜꜱᴇʀꜱ ᴄᴀɴ ꜱᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇꜱ ꜰᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ ɪ ᴡɪʟʟ ʀᴇꜱᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪꜱ ꜰᴏᴜɴᴅ ɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ
-
-<u>ɴᴏᴛᴇ</u> :
-1. ᴛʜɪꜱ ʙᴏᴛ ꜱʜᴏᴜʟᴅ ʜᴀᴠᴇ ᴀᴅᴍɪɴ ᴘʀɪᴠɪʟᴇɢᴇ.
-2. ᴏɴʟʏ ᴀᴅᴍɪɴꜱ ᴄᴀɴ ᴀᴅᴅ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ.
-3. ᴀʟᴇʀᴛ ʙᴜᴛᴛᴏɴꜱ ʜᴀᴠᴇ ᴀ ʟɪᴍɪᴛ ᴏꜰ 64 ᴄʜᴀʀᴀᴄᴛᴇʀꜱ.
-
-<u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ</u>:
-• /filter - ᴀᴅᴅ ᴀ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ.
-• /filters - ʟɪꜱᴛ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴛᴇʀꜱ ᴏꜰ ᴀ ᴄʜᴀᴛ.
-• /del - ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴛᴇʀ ɪɴ ᴀ ᴄʜᴀᴛ.
-• /delall - ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴡʜᴏʟᴇ ꜰɪʟᴛᴇʀꜱ ɪɴ ᴀ ᴄʜᴀᴛ (ᴄʜᴀᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)."""
-
-    AUTOFILTER_TXT = """ʜᴇʟᴘ: <b>ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ</b>
-<u>ɴᴏᴛᴇ- ꜰɪʟᴇ ɪɴᴅᴇx</u> :
+<b>ɴᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b>
 1. ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ'ꜱ ᴘʀɪᴠᴀᴛᴇ.
 2. ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇꜱ ɴᴏᴛ ᴄᴏɴᴛᴀɪɴꜱ ᴄᴀᴍʀɪᴘꜱ, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇꜱ.
 3. ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ Qᴜᴏᴛᴇꜱ. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.
 
-<u>ɴᴏᴛᴇ- ᴀᴜᴛᴏꜰɪʟᴛᴇʀ</u> :
-1. ᴀᴅᴅ ᴛʜᴇ ʙᴏᴛ ᴀꜱ ᴀᴅᴍɪɴ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-2. ᴜꜱᴇ <code>/settings</code> ᴏɴ ʙᴏᴛ'ꜱ ᴘᴍ ᴀɴᴅ ᴛᴜʀɴ ᴏɴ ᴀᴜᴛᴏꜰɪʟᴛᴇʀ ᴏɴ ᴛʜᴇ ꜱᴇᴛᴛɪɴɢꜱ ᴍᴇɴᴜ."""
+<b>Nᴏᴛᴇ: AᴜᴛᴏFɪʟᴛᴇʀ</b>
+1. Aᴅᴅ ᴛʜᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
+2. Usᴇ /connect ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴛʜᴇ ʙᴏᴛ.
+3. Usᴇ /settings ᴏɴ ʙᴏᴛ's PM ᴀɴᴅ ᴛᴜʀɴ ᴏɴ AᴜᴛᴏFɪʟᴛᴇʀ ᴏɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ.."""
+    CONNECTION_TXT = """Help: <b>Connections</b>
 
-    FILE_STORE_TXT = """
-ꜰɪʟᴇ ꜱᴛᴏʀᴇ ɪꜱ ᴛʜᴇ ꜰᴇᴀᴛᴜʀᴇ ᴡʜɪᴄʜ ᴡɪʟʟ ᴄʀᴇᴀᴛᴇ ᴀ ꜱʜᴀʀᴇᴀʙʟᴇ ʟɪɴᴋ ᴏꜰ ᴀ ꜱɪɴɢʟᴇ ᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ꜰɪʟᴇꜱ
+- Used to connect bot to PM for managing filters 
+- it helps to avoid spamming in groups.
 
-<u>ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ</u>:
-• /batch - ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴍᴜʟᴛɪᴘʟᴇ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʟɪɴᴋ.
-• /link - ᴛᴏ ᴄʀᴇᴀᴛᴇ ᴀ ꜱɪɴɢʟᴇ ꜰɪʟᴇ ꜱᴛᴏʀᴇ ʟɪɴᴋ.
-• /pbatch - ᴊᴜꜱᴛ ʟɪᴋᴇ /batch, ʙᴜᴛ ᴛʜᴇ ꜰɪʟᴇ ᴡɪʟʟ ʙᴇ ꜱᴇɴᴅ ᴡɪᴛʜ ꜰᴏʀᴡᴏʀᴅ ʀᴇꜱᴛʀɪᴄᴛɪᴏɴ.
-• /plink - ᴊᴜꜱᴛ ʟɪᴋᴇ /link, ʙᴜᴛ ᴛʜᴇ ꜰɪʟᴇ ᴡɪʟʟ ʙᴇ ꜱᴇɴᴅ ᴡɪᴛʜ ꜰᴏʀᴡᴏʀᴅ ʀᴇꜱᴛʀɪᴄᴛɪᴏɴ."""
-    
-       
+<b>NOTE:</b>
+1. Only admins can add a connection.
+2. Send <code>/connect</code> for connecting me to ur PM
+
+<b>Commands and Usage:</b>
+• /connect  - <code>connect a particular chat to your PM</code>
+• /disconnect  - <code>disconnect from a chat</code>
+• /connections - <code>list all your connections</code>"""
+    EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
+
+<b>NOTE:</b>
+these are the extra features of ShobanaFilterBot
+
+<b>Commands and Usage:</b>
+• /id - <code>get id of a specified user.</code>
+• /info  - <code>get information about a user.</code>
+• /imdb  - <code>get the film information from IMDb source.</code>
+• /search  - <code>get the film information from various sources.</code>
+• /start - <code>Check I'm Alive.</code>
+• /ping - <code>check ping.</code>
+• /usage - <code>usage of bot.</code>
+• /info - <code>User info .</code>
+• /id - <code>User id  .</code>
+• /broadcast - <code>Broadcast (owner only).</code>
+"""
+    ADMIN_TXT = """Help: <b>Admin mods</b>
+
+<b>NOTE:</b>
+This module only works for my admins
+
+<b>Commands and Usage:</b>
+• /logs - <code>to get the rescent errors</code>
+• /stats - <code>to get status of files in db.</code>
+• /delete - <code>to delete a specific file from db.</code>
+• /users - <code>to get list of my users and ids.</code>
+• /chats - <code>to get list of the my chats and ids </code>
+• /leave  - <code>to leave from a chat.</code>
+• /disable  -  <code>do disable a chat.</code>
+• /ban  - <code>to ban a user.</code>
+• /unban  - <code>to unban a user.</code>
+• /channel - <code>to get list of total connected channels</code>
+• /broadcast - <code>to broadcast a message to all users</code>"""
+    STATUS_TXT = """𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
+ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
+ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
+ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 
+ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> """
     LOG_TEXT_G = """#NewGroup
-    
-Gʀᴏᴜᴘ = {}
-Iᴅ = <code>{}</code>
-Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
-Aᴅᴅᴇᴅ Bʏ - {}
+Group = {}(<code>{}</code>)
+Total Members = <code>{}</code>
+Added By - {}
 """
+    RESULT_TXT="""<blockquote> Hey,     </blockquote>
+<blockquote>Jᴜsᴛ Sᴇᴇ Wʜᴀᴛ I Found Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ </blockquote>"""
 
+    CUSTOM_FILE_CAPTION = """<pre><b>@KnMoviez {file_name} </b>
+</pre>"""
+
+    
+    RESTART_GC_TXT = """
+<b>𝖡𝗈𝗍 𝖱𝖾𝗌𝗍𝖺𝗋𝗍𝖾𝖽 !</b>
+
+📅 𝖣𝖺𝗍𝖾 : <code>{}</code>
+⏰ 𝖳𝗂𝗆𝖾 : <code>{}</code>
+🌐 𝖳𝗂𝗆𝖾𝗓𝗈𝗇𝖾 : <code>Asia/Kolkata</code>
+🛠️ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : <code>𝗏1 [ 𝖲𝗍able ]</code></b>"""
+    
     LOG_TEXT_P = """#NewUser
-    
-Iᴅ - <code>{}</code>
-Nᴀᴍᴇ - {}
+ID - <code>{}</code>
+Name - {}
 """
+    SPOLL_NOT_FND="""
+I couldn't find anything related to your request. 
+Try reading the instruction below 
+<blockquote>
+1️ Ask in Correct Spelling
+2️ Don't ask Movies which are not Realased on OTT PLATFORMS
+3️ Possible  ASK [movie name langauge] like this or [movie year] </blockquote>
+OR
+<b> Tʜɪs Mᴏᴠɪᴇ Is Nᴏᴛ Aᴅᴅᴇᴅ Tᴏ DB</b>
+<pre>Report To ADMIN BY USING /bugs command </pre> 
+    """
+#SPELL CHECK LANGUAGES TO KNOW callback
+    ENG_SPELL="""Please Note Below📓
+1️⃣ Ask in Correct Spelling
+2️⃣ Don't ask Movies which are not Realased on OTT PLATFORMS
+3️⃣ Possible  ASK [movie name langauge] like this or [movie year]
+    """
+    MAL_SPELL="""ദയവായി താഴെ ശ്രദ്ധിക്കുക📓
+1️⃣ ശരിയായ അക്ഷരവിന്യാസത്തിൽ ചോദിക്കുക
+2️⃣ OTT പ്ലാറ്റ്‌ഫോമുകളിൽ റിലീസ് ചെയ്യാത്ത സിനിമകൾ ചോദിക്കരുത്
+3️⃣ ഇത് പോലെ [സിനിമയുടെ പേര് ഭാഷ] അല്ലെങ്കിൽ [സിനിമ വർഷം] ചോദിക്കാം
+    """
+    HIN_SPELL="""कृपया नीचे ध्यान दें📓
+1️⃣ सही वर्तनी में पूछें
+2️⃣ उन फिल्मों के बारे में न पूछें जो ओटीटी प्लेटफॉर्म पर रिलीज नहीं हुई हैं
+3️⃣ संभव है पूछें [मूवी का नाम भाषा] इस तरह या [मूवी वर्ष]
+    """
+    TAM_SPELL="""கீழே கவனிக்கவும்📓
+1️⃣ சரியான எழுத்துப்பிழையில் கேளுங்கள்
+2️⃣ வெளியாகாத திரைப்படங்களைக் கேட்காதீர்கள்
+3️⃣ இந்த வடிவத்தில் கேளுங்கள் [திரைப்படத்தின் பெயர், ஆண்டு]
+    """
 
-    ALRT_TXT = """ʜᴇʟʟᴏ {},
-ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ,
-ʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ..."""
-
-    OLD_ALRT_TXT = """ʜᴇʏ {},
-ʏᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴏɴᴇ ᴏꜰ ᴍʏ ᴏʟᴅ ᴍᴇꜱꜱᴀɢᴇꜱ, 
-ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇǫᴜᴇꜱᴛ ᴀɢᴀɪɴ."""
-
-    CUDNT_FND = """ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ {}
-ᴅɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏꜰ ᴛʜᴇꜱᴇ ?"""
-
-    I_CUDNT = """<b><i>ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ.
-
-ɪᴛ ʜᴀꜱ ᴇɪᴛʜᴇʀ ɴᴏᴛ ʙᴇᴇɴ ʀᴇʟᴇᴀꜱᴇᴅ ᴏʀ ʜᴀꜱ ɴᴏᴛ ʏᴇᴛ ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ᴛᴏ ᴛʜᴇ ᴅᴀᴛᴀʙᴀꜱᴇ.</i></b>"""
+    CHK_MOV_ALRT="""♻️ ᴄʜᴇᴄᴋɪɴɢ ꜰɪʟᴇ ᴏɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ... ♻️"""
     
-    I_CUD_NT = """<b><i>ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ.
-
-ɪᴛ ʜᴀꜱ ᴇɪᴛʜᴇʀ ɴᴏᴛ ʙᴇᴇɴ ʀᴇʟᴇᴀꜱᴇᴅ ᴏʀ ʜᴀꜱ ɴᴏᴛ ʏᴇᴛ ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ᴛᴏ ᴛʜᴇ ᴅᴀᴛᴀʙᴀꜱᴇ.</i></b>"""
+    OLD_MES=""" 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬🤔, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧"""
     
-    MVE_NT_FND = """<b><i>ᴛʜɪꜱ ᴍᴏᴠɪᴇ ɪꜱ ɴᴏᴛ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ.
-
-ɪᴛ ʜᴀꜱ ᴇɪᴛʜᴇʀ ɴᴏᴛ ʙᴇᴇɴ ʀᴇʟᴇᴀꜱᴇᴅ ᴏʀ ʜᴀꜱ ɴᴏᴛ ʏᴇᴛ ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ᴛᴏ ᴛʜᴇ ᴅᴀᴛᴀʙᴀꜱᴇ.</i></b>"""
-    
-    TOP_ALRT_MSG = """ꜱᴇᴀʀᴄʜɪɴɢ ꜰᴏʀ ǫᴜᴇʀʏ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ..."""
-
-    MELCOW_ENG = """<b>👋 ʜᴇʏ {},\n\n🍁 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ\n🌟 {} \n\n🔍 ʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ ꜱᴇᴀʀᴄʜ ʏᴏᴜʀ ꜰᴀᴠᴏᴜʀɪᴛᴇ ᴍᴏᴠɪᴇꜱ ᴏʀ ꜱᴇʀɪᴇꜱ ʙʏ ᴊᴜꜱᴛ ᴛʏᴘɪɴɢ ɪᴛ'ꜱ ɴᴀᴍᴇ 🔎\n\n⚠️ ɪꜰ ʏᴏᴜ'ʀᴇ ʜᴀᴠɪɴɢ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ʀᴇɢᴀʀᴅɪɴɢ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴏʀ ꜱᴏᴍᴇᴛʜɪɴɢ ᴇʟꜱᴇ ᴛʜᴇɴ ᴍᴇꜱꜱᴀɢᴇ ʜᴇʀᴇ 👇</b>"""
-    
-    DISCLAIMER_TXT = """
-<b>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
-
-ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ꜰʀᴇᴇʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ ᴏʀ ᴘᴏꜱᴛᴇᴅ ʙʏ ꜱᴏᴍᴇʙᴏᴅʏ ᴇʟꜱᴇ. ᴊᴜꜱᴛ ꜰᴏʀ ᴇᴀꜱʏ ꜱᴇᴀʀᴄʜɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɪɴᴅᴇxɪɴɢ ꜰɪʟᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ. ᴡᴇ ʀᴇꜱᴘᴇᴄᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀᴡꜱ ᴀɴᴅ ᴡᴏʀᴋꜱ ɪɴ ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪᴛʜ ᴅᴍᴄᴀ ᴀɴᴅ ᴇᴜᴄᴅ. ɪꜰ ᴀɴʏᴛʜɪɴɢ ɪꜱ ᴀɢᴀɪɴꜱᴛ ʟᴀᴡ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ꜱᴏ ᴛʜᴀᴛ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ᴀꜱᴀᴘ. ɪᴛ ɪꜱ ꜰᴏʀʙɪʙʙᴇɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ, ꜱᴛʀᴇᴀᴍ, ʀᴇᴘʀᴏᴅᴜᴄᴇ, ꜱʜᴀʀᴇ ᴏʀ ᴄᴏɴꜱᴜᴍᴇ ᴄᴏɴᴛᴇɴᴛ ᴡɪᴛʜᴏᴜᴛ ᴇxᴘʟɪᴄɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ ᴄʀᴇᴀᴛᴏʀ ᴏʀ ʟᴇɢᴀʟ ᴄᴏᴘʏʀɪɢʜᴛ ʜᴏʟᴅᴇʀ. ɪꜰ ʏᴏᴜ ʙᴇʟɪᴇᴠᴇ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴠɪᴏʟᴀᴛɪɴɢ ʏᴏᴜʀ ɪɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ ᴘʀᴏᴘᴇʀᴛʏ, ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ʀᴇꜱᴘᴇᴄᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ ꜰᴏʀ ʀᴇᴍᴏᴠᴀʟ. ᴛʜᴇ ʙᴏᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴏᴡɴ ᴀɴʏ ᴏꜰ ᴛʜᴇꜱᴇ ᴄᴏɴᴛᴇɴᴛꜱ, ɪᴛ ᴏɴʟʏ ɪɴᴅᴇx ᴛʜᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ. 
-</b>"""
-
-    PREMIUM_TEXT = """<blockquote>🎖️ <b>ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʟᴀɴs</b></blockquote>
-
-◉ 07 ᴅᴀʏꜱ - 15 ₹
-◉ 15 ᴅᴀʏꜱ - 30 ₹
-◉ 01 ᴍᴏɴᴛʜꜱ - 60 ₹
-◉ 02 ᴍᴏɴᴛʜꜱ - 120 ₹
-◉ 03 ᴍᴏɴᴛʜꜱ - 220 ₹
-
-•─────•─────────•─────•
-💵 ᴜᴘɪ ɪᴅ - ⚠️ <b><u>ᴛʜɪꜱ ꜱᴇʀᴠɪᴄᴇ ɪꜱ ᴛᴇᴍᴘᴏʀᴀʀʏ ᴄʟᴏꜱᴇᴅ.</u></b>
-
-🏷️ <a href='https://t.me/+blcE2jS-iGtkMjNl'>ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ ᴘʀᴏᴏꜰ</a>
-
-‼️ ᴍᴜꜱᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ᴀꜰᴛᴇʀ ᴘᴀʏᴍᴇɴᴛ.
-‼️ ᴀꜰᴛᴇʀ ꜱᴇɴᴅɪɴɢ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ɢɪᴠᴇ ᴜꜱ ꜱᴏᴍᴇᴛɪᴍᴇꜱ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪꜱᴛ."""
-   
-    
-    BPREMIUM_TXT = """<blockquote>🎁 <b>ᴘʀᴇᴍɪᴜᴍ ꜰᴇᴀᴛᴜʀᴇꜱ</b> :</blockquote>
-
-○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪꜰʏ
-○ ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋꜱ
-○ ᴅɪʀᴇᴄᴛ ꜰɪʟᴇꜱ   
-○ ᴀᴅ-ꜰʀᴇᴇ ᴇxᴘᴇʀɪᴇɴᴄᴇ 
-○ ʜɪɢʜ-ꜱᴘᴇᴇᴅ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ                         
-○ ᴍᴜʟᴛɪ-ᴘʟᴀʏᴇʀ ꜱᴛʀᴇᴀᴍɪɴɢ ʟɪɴᴋꜱ                           
-○ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇꜱ & ꜱᴇʀɪᴇꜱ                                                                        
-○ ꜰᴜʟʟ ᴀᴅᴍɪɴ ꜱᴜᴘᴘᴏʀᴛ                              
-○ ʀᴇǫᴜᴇꜱᴛ ᴡɪʟʟ ʙᴇ ᴄᴏᴍᴘʟᴇᴛᴇᴅ ɪɴ 1ʜ [ ɪꜰ ᴀᴠᴀɪʟᴀʙʟᴇ ]
-
-• ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ ʙʏ ʀᴇꜰᴇʀɪɴɢ ʏᴏᴜʀ ꜰʀɪᴇɴᴅꜱ ᴏʀ ʏᴏᴜ ᴄᴀɴ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ꜱᴇʀᴠɪᴄᴇ 
-
-•─────•─────────•─────•
-◉ ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ᴘʟᴀɴ : /myplan
-
-‼️ ᴀꜰᴛᴇʀ ꜱᴇɴᴅɪɴɢ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ ɢɪᴠᴇ ᴜꜱ ꜱᴏᴍᴇᴛɪᴍᴇꜱ ᴛᴏ ᴀᴅᴅ ʏᴏᴜ ɪɴ ᴘʀᴇᴍɪᴜᴍ ʟɪꜱᴛ."""   
-    
-      
-    NORSLTS = """ 
-#NoResults
-
-Iᴅ : <code>{}</code>
-Nᴀᴍᴇ : {}
-
-Mᴇꜱꜱᴀɢᴇ : <b>{}</b>"""
-    
-    CAPTION = """<b><a href="https://t.me/SilentXBotz">{file_name}</a></b>\n\n<b>⚜️ Powered By : <a https://t.me/SilentXBotz>[SilentXBotz]</a></b>"""
-
-    IMDB_TEMPLATE_TXT = """
-<b>🏷 Title</b>: <a href={url}>{title}</a>
-🎭 Genres: {genres}
-� Year: <a href={url}/releaseinfo>{year}</a>
-🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
-📀 RunTime: {runtime} Minutes
-
-⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
-Requested by : {message.from_user.mention}</b>"""    
-
+    MOV_NT_FND="""<b>Tʜɪs Mᴏᴠɪᴇ Is Nᴏᴛ Yᴇᴛ Rᴇᴀʟᴇsᴇᴅ Oʀ Aᴅᴅᴇᴅ Tᴏ DB</b>
+<pre>Report To ADMIN BY USING /bugs command </pre> 
+"""
     RESTART_TXT = """
-<b>{} ʙᴏᴛ ʀᴇꜱᴛᴀʀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ !
-
-📅 ᴅᴀᴛᴇ : <code>{}</code>
-⏰ ᴛɪᴍᴇ : <code>{}</code>
-🌐 ᴛɪᴍᴇᴢᴏɴᴇ : <code>ᴀꜱɪᴀ/ᴋᴏʟᴋᴀᴛᴀ</code>
-🛠️ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : <code>V4.2 [ ꜱᴛᴀʙʟᴇ ]</code>
-</b>"""
-    LOGO = """
-  ____  _ _            _  __  ______        _       
- / ___|(_) | ___ _ __ | |_\ \/ / __ )  ___ | |_ ____
- \___ \| | |/ _ \ '_ \| __|\  /|  _ \ / _ \| __|_  /
-  ___) | | |  __/ | | | |_ /  \| |_) | (_) | |_ / / 
- |____/|_|_|\___|_| |_|\__/_/\_\____/ \___/ \__/___|
-                                                                                                                                                                            
-𝙱𝙾𝚃 𝚆𝙾𝚁𝙺𝙸𝙽𝙶 𝙿𝚁𝙾𝙿𝙴𝚁𝙻𝚈...."""
-
-    ADMIN_CMD = """ʜᴇʏ 👋,
-
-📚 ʜᴇʀᴇ ᴀʀᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ ꜰᴏʀ ᴀʟʟ ʙᴏᴛ ᴀᴅᴍɪɴꜱ ⇊
-
-• /movie_update - <code>ᴏɴ ᴏғғ ᴀᴄᴄᴏʀᴅɪɴɢ ʏᴏᴜʀ ɴᴇᴇᴅᴇᴅ...</code> 
-• /pm_search - <code>ᴘᴍ sᴇᴀʀᴄʜ ᴏɴ ᴏғғ ᴀᴄᴄᴏʀᴅɪɴɢ ʏᴏᴜʀ ɴᴇᴇᴅᴇᴅ...</code>
-• /verifyon - <code>ᴛᴜʀɴ ᴏɴ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ (ᴏɴʟʏ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ)</code>
-• /verifyoff - <code>ᴛᴜʀɴ ᴏꜰꜰ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ (ᴏɴʟʏ ᴡᴏʀᴋ ɪɴ ɢʀᴏᴜᴘ)</code>
-• /logs - <code>ɢᴇᴛ ᴛʜᴇ ʀᴇᴄᴇɴᴛ ᴇʀʀᴏʀꜱ.</code>
-• /delete - <code>ᴅᴇʟᴇᴛᴇ ᴀ ꜱᴘᴇᴄɪꜰɪᴄ ꜰɪʟᴇ ꜰʀᴏᴍ ᴅʙ.</code>
-• /users - <code>ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴍʏ ᴜꜱᴇʀꜱ ᴀɴᴅ ɪᴅꜱ.</code>
-• /chats - <code>ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴍʏ ᴄʜᴀᴛꜱ ᴀɴᴅ ɪᴅꜱ.</code>
-• /leave  - <code>ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ᴀ ᴄʜᴀᴛ.</code>
-• /disable  -  <code>ᴅɪꜱᴀʙʟᴇ ᴀ ᴄʜᴀᴛ.</code>
-• /ban  - <code>ʙᴀɴ ᴀ ᴜꜱᴇʀ.</code>
-• /unban  - <code>ᴜɴʙᴀɴ ᴀ ᴜꜱᴇʀ.</code>
-• /channel - <code>ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴛᴏᴛᴀʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘꜱ.</code>
-• /broadcast - <code>ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴀ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀʟʟ ᴜꜱᴇʀꜱ.</code>
-• /grp_broadcast - <code>ʙʀᴏᴀᴅᴄᴀsᴛ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴀʟʟ ᴄᴏɴɴᴇᴄᴛᴇᴅ ɢʀᴏᴜᴘs.</code>
-• /gfilter - <code>ᴀᴅᴅ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀs.</code>
-• /gfilters - <code>ᴠɪᴇᴡ ʟɪsᴛ ᴏғ ᴀʟʟ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀs.</code>
-• /delg - <code>ᴅᴇʟᴇᴛᴇ ᴀ sᴘᴇᴄɪғɪᴄ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ.</code>
-• /delallg - <code>ᴅᴇʟᴇᴛᴇ ᴀʟʟ Gғɪʟᴛᴇʀs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
-• /deletefiles - <code>ᴅᴇʟᴇᴛᴇ CᴀᴍRɪᴘ ᴀɴᴅ PʀᴇDVD ғɪʟᴇs ғʀᴏᴍ ᴛʜᴇ ʙᴏᴛ's ᴅᴀᴛᴀʙᴀsᴇ.</code>
-• /send - <code>ꜱᴇɴᴅ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴜꜱᴇʀ.</code>
-• /add_premium - <code>ᴀᴅᴅ ᴀɴʏ ᴜꜱᴇʀ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ.</code>
-• /remove_premium - <code>ʀᴇᴍᴏᴠᴇ ᴀɴʏ ᴜꜱᴇʀ ꜰʀᴏᴍ ᴘʀᴇᴍɪᴜᴍ.</code>
-• /premium_users - <code>ɢᴇᴛ ʟɪꜱᴛ ᴏꜰ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀꜱ.</code>
-• /get_premium - <code>ɢᴇᴛ ɪɴꜰᴏ ᴏꜰ ᴀɴʏ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ.</code>
-• /restart - <code>ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.</code>"""
-
-    GROUP_CMD = """ʜᴇʏ 👋,
-📚 ʜᴇʀᴇ ᴀʀᴇ ᴍʏ ᴄᴏᴍᴍᴀɴᴅꜱ ʟɪꜱᴛ ꜰᴏʀ ᴄᴜꜱᴛᴏᴍɪᴢᴇᴅ ɢʀᴏᴜᴘꜱ ⇊
-
-• /settings - ᴄʜᴀɴɢᴇ ᴛʜᴇ ɢʀᴏᴜᴘ ꜱᴇᴛᴛɪɴɢꜱ ᴀꜱ ʏᴏᴜʀ ᴡɪꜱʜ.
-• /set_shortner - ꜱᴇᴛ ʏᴏᴜʀ 1ꜱᴛ ꜱʜᴏʀᴛɴᴇʀ.
-• /set_shortner_2 - ꜱᴇᴛ ʏᴏᴜʀ 2ɴᴅ ꜱʜᴏʀᴛɴᴇʀ.
-• /set_shortner_3 - ꜱᴇᴛ ʏᴏᴜʀ 3ʀᴅ ꜱʜᴏʀᴛɴᴇʀ.
-• /set_tutorial - ꜱᴇᴛ ʏᴏᴜʀ 1ꜱᴛ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ .
-• /set_tutorial_2 - ꜱᴇᴛ ʏᴏᴜʀ 2ɴᴅ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ .
-• /set_tutorial_3 - ꜱᴇᴛ ʏᴏᴜʀ 3ʀᴅ ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ .
-• /set_time - ꜱᴇᴛ 1ꜱᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ɢᴀᴘ.
-• /set_time_2 - ꜱᴇᴛ 2ɴᴅ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ɢᴀᴘ.
-• /set_log_channel - ꜱᴇᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ʟᴏɢ ᴄʜᴀɴɴᴇʟ.
-• /set_fsub - ꜱᴇᴛ ᴄᴜꜱᴛᴏᴍ ꜰᴏʀᴄᴇ ꜱᴜʙ ᴄʜᴀɴɴᴇʟ.
-• /remove_fsub - ʀᴇᴍᴏᴠᴇ ᴄᴜꜱᴛᴏᴍ ꜰᴏʀᴄᴇ ꜱᴜʙ ᴄʜᴀɴɴᴇʟ.
-• /reset_group - ʀᴇꜱᴇᴛ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ.
-• /details - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ꜱᴇᴛᴛɪɴɢꜱ."""    
-
-    PAGE_TXT = """ᴡʜʏ ᴀʀᴇ ʏᴏᴜ ꜱᴏ ᴄᴜʀɪᴏᴜꜱ ⁉️"""    
-   
-    SOURCE_TXT = """<b>ՏOᑌᖇᑕᗴ ᑕOᗪᗴ :</b> 👇\nThis Is An Open-Source Project. You Can Use It Freely, But Selling The Source Code Is Strictly Prohibited."""
+<b><u>𝖡𝗈𝗍 𝖱𝖾𝗌𝗍𝖺𝗋𝗍𝖾𝖽 ✅</u></b>"""
