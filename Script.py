@@ -1,22 +1,90 @@
 class script(object):
-    START_TXT = """<b>𝙷𝙴𝙻𝙻𝙾 {},\n
-<quote>𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>,</quote>\n
-<spoiler>𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈😍</spoiler></b>"""
-    
+    START_TXT = """<b><i>𝙷𝙴𝙻𝙾 {},
+𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍</b></i>"""
     HELP_TXT = """<b>𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
-    
-    ABOUT_TXT = """<b>
-◎ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/NANDAN_REIGNS>Nᴀɴᴅᴀɴ Rᴇɪɢɴs</a>
-◎ Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 3
-◎ Dᴀᴛᴀ Bᴀsᴇ: Mᴏɴɢᴏ DB
-◎ Bᴏᴛ Sᴇʀᴠᴇʀ: KoYeb</b>"""
-    SOURCE_TXT = """<b><quote>കൊട്ക്ക്ണില്ല്യാ...... </quote></b>"""
-    
+    ABOUT_TXT = """<b>✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
+✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/nandan_reigns>Nᴀɴᴅᴀɴ ʀᴇɪɢɴꜱ</a>
+✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
+✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
+✯ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
+✯ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁: 𝙷𝙴𝚁𝙾𝙺𝚄
+✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]</b>"""
+    SOURCE_TXT = """<b>NOTE:</b>
+- Sᴏᴜʀᴄᴇ  - https://t.me/KnMoviez  
+
+<b>DEVS:</b>
+- <a href=https://t.me/jasmine_kn6>Jᴀꜱᴍɪɴᴇ</a>"""
+    TELEGRAPH = """Reply to any photo or video using by /telegraph that photo telegraph link you will get"""
+    TOOLS = """TOOLS:
+
+/news - {text}
+/paste - {reply}"""
+    LYRICS = """Usage Lyrics:
+
+/lyrics - {song name}"""
+    QRCODE = """Usage qr code:
+
+/qr - {text}"""
+    SONG = """usage song: 
+
+/song - {song name}"""
+    IMAGINE = """ How to Use example
+<code>/imagine a boy and girl looking a sky </code>
+You Can Create Your like pictures using by This command /imagine """
+    TRANSLATE = """Usages:
+/tr reply message and ml like this
+
+<code> /tr ml </code>"""
+    PROMOTE = """<b>Yᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴ
+ 
+Bʏ ᴜsɪɴɢ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ. 
+/promote 
+
+
+Yᴏᴜ ᴄᴀɴ ʀᴇᴍᴏᴠᴇ ᴛʜᴇᴍ ʙʏ ᴀᴅᴍɪɴ ᴜsɪɴɢ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ /demote</b>"""
+    IMG = """ You Can Serch Image Using This command /img
+Example: <code> /image Samantha </code>"""
+    FONT_TXT = """ ᴛᴏ ᴜsᴇ ᴛʜɪs ғᴜɴᴄᴛɪᴏ
+
+/font {your_text}
+
+ᴇɢ:- /font Hello """
+    STICKER = """ yᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴛʜɪꜱ ᴍᴏᴅᴜʟᴇ ᴛᴏ ꜰɪɴᴅᴀɴy  ꜱᴛɪᴄᴋᴇʀꜱ ɪᴅ.
+• ᴜꜱᴀɢᴇ :ᴛᴏ ɢᴇᴛ ꜱᴛɪᴄᴋᴇʀ
+ 
+⭕ ʜᴏᴡ ᴛᴏ ᴜꜱᴇ
+◉ Reply To Any Sticker [/stickerid]"""
+    TTS = """ Help:  TTS 🎤 module:
+Translate text to speech
+Commands and Usage:
+• /tts  : convert text to speech"""
+    BUG_TXT = """Yᴏᴜ ᴄᴀɴ ʀᴇᴘᴏʀᴛ ᴇʀʀᴏʀs ᴀɴᴅ ʙᴜɢs ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ 
+ᴜsɪɴɢ ʙʏ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ /bug """
+    FEED = """Iғ Yᴏᴜ Wᴀɴᴛ Aɴʏ Fᴇᴇᴅʙᴀᴄᴋ ᴏʀ Aɴʏ Fᴇᴄᴛᴜʀᴇs Aʙᴏᴜᴛ Tʜᴇ Bᴏᴛ, 
+Jᴜsᴛ Usᴇ Tʜɪs Cᴏᴍᴍᴀɴᴅ /feedback"""
+    AI = """AI
+/openai {query}
+"""
+    FUNS = """FUNS HELP
+
+/truth - [message]
+/dare - [message]
+/joke - [message]
+"""
+    ECHO = """ Tʜɪs ғᴇᴄᴛᴜʀᴇ ɪs ᴠᴇʀʏ ɪɴᴛᴇʀᴇsᴛɪɴɢ ᴀɴᴅ ғᴜɴɴʏ 
+
+ Tʜᴇ MEMBERS ᴏғ ʏᴏᴜʀ ɢʀᴏᴜᴘ ʀᴇᴘʟʏ ᴛᴇxᴛ
+
+ Tʜᴀᴛ ᴡɪʟʟ sʜᴏᴡ ᴛʜᴀᴛ ᴍᴇssᴀɢᴇ ʀᴇᴘʟʏᴇᴅ ᴀɴᴅ ᴛʜᴇɴ ᴏᴜʀ ᴍᴇssᴀɢᴇ ᴅᴇʟᴇᴛᴇ ᴡɪʟʟ 
+ /echo {text}
+ """
     MANUELFILTER_TXT = """Help: <b>Filters</b>
-- Filter is the feature were users can set automated replies for a particular keyword and shobana will respond whenever a keyword is found the message
+
+- Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
+
 <b>NOTE:</b>
-1. This Bot should have admin privillage.
+1. bot should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -25,31 +93,87 @@ class script(object):
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
+
+    ENHANCE = """ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴘʜᴏᴛᴏ ᴜsɪɴɢ ʙʏ /enhance ᴀɴᴅ ᴛʜᴀᴛ ᴘʜᴏᴛᴏ ᴡɪʟʟ ᴇɴʜᴀɴᴄᴇᴅ"""
+    CARBON = """HELP: Carbon
+
+Beautify your code using carbon!
+
+USAGE:
+➢ /carbon [text] - Create carbon from the given text."""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- This Bot Supports both url and alert inline buttons.
+- bot Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. This Bot supports buttons with any telegram media type.
+2. bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://github.com/mn-bots/ShobanaFilterBot)</code>
+<code>[Button Text](buttonurl:https://t.me/....)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """
+    AUTOFILTER_TXT = """Help: <b>Auto Filter</b>
 
-<b>ɴᴏᴛᴇ: Fɪʟᴇ Iɴᴅᴇx</b>
-1. ᴍᴀᴋᴇ ᴍᴇ ᴛʜᴇ ᴀᴅᴍɪɴ ᴏꜰ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ɪꜰ ɪᴛ'ꜱ ᴘʀɪᴠᴀᴛᴇ.
-2. ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴅᴏᴇꜱ ɴᴏᴛ ᴄᴏɴᴛᴀɪɴꜱ ᴄᴀᴍʀɪᴘꜱ, ᴘᴏʀɴ ᴀɴᴅ ꜰᴀᴋᴇ ꜰɪʟᴇꜱ.
-3. ꜰᴏʀᴡᴀʀᴅ ᴛʜᴇ ʟᴀꜱᴛ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ ᴍᴇ ᴡɪᴛʜ Qᴜᴏᴛᴇꜱ. ɪ'ʟʟ ᴀᴅᴅ ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴍʏ ᴅʙ.
+<b>NOTE:</b>
+1. Make me the admin of your channel if it's private.
+2. make sure that your channel does not contains camrips, porn and fake files.
+3. Forward the last message to me with quotes.
+ I'll add all the files in that channel to my db."""
+    PONG_TXT = """ ᴘɪɴɢ ᴛᴇꜱᴛɪɴɢ:ʜᴇʟᴘꜱ ʏᴏᴜ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜʀ ᴘɪɴɢ🪄
 
-<b>Nᴏᴛᴇ: AᴜᴛᴏFɪʟᴛᴇʀ</b>
-1. Aᴅᴅ ᴛʜᴇ ʙᴏᴛ ᴀs ᴀᴅᴍɪɴ ᴏɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-2. Usᴇ /connect ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴛʜᴇ ʙᴏᴛ.
-3. Usᴇ /settings ᴏɴ ʙᴏᴛ's PM ᴀɴᴅ ᴛᴜʀɴ ᴏɴ AᴜᴛᴏFɪʟᴛᴇʀ ᴏɴ ᴛʜᴇ sᴇᴛᴛɪɴɢs ᴍᴇɴᴜ.."""
+ᴄᴏᴍᴍᴀɴᴅꜱ:
+• /alive - ᴛᴏ ᴄʜᴇᴄᴋ ʏᴏᴜ ᴀʀᴇ ᴀʟɪᴠᴇ.
+• /ping - ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴘɪɴɢ.
+
+ᴜꜱᴀɢᴇ :
+• ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ɪɴ ᴘᴍ ᴀɴᴅ ɢʀᴏᴜᴘꜱ
+• ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴀɴ ʙᴇ ᴜꜱᴇᴅ ʙᴜʏ ᴇᴠᴇʀʏᴏɴᴇ ɪɴ ᴛʜᴇ ɢʀᴏᴜᴘꜱ ᴀɴᴅ ʙᴏᴛꜱ ᴘᴍ
+• ꜱʜᴀʀᴇ ᴜꜱ ꜰᴏʀ ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ"""
+    PIN_TXT = """ ᴩɪɴ ᴍᴏᴅᴜʟᴇ
+ᴩɪɴ ᴀ ᴍᴇꜱꜱᴀɢᴇ...
+
+ᴀʟʟ ᴛʜᴇ ᴩɪɴ ʀᴇᴩʟᴀᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ᴄᴀɴ ʙᴇ ꜰᴏᴜɴᴅ ʜᴇʀᴇ:
+
+📌ᴄᴏᴍᴍᴀɴᴅꜱ ᴀɴᴅ ᴜꜱᴀɢᴇ📌
+
+/pin :- ᴛᴏ ᴩɪɴ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴏɴ ʏᴏᴜʀ ᴄʜᴀᴛꜱ
+/unpin :- ᴛᴏ ᴜɴᴩɪɴ ᴛʜᴇ ᴄᴜʀʀᴇᴇɴᴛ ᴩɪɴɴᴇᴅ ᴍᴇꜱꜱᴀɢ
+/unpin_all :- ᴛᴏ ᴜɴᴩɪɴ ᴛʜᴇ ᴄᴜʀʀᴇᴇɴᴛ ᴩɪɴɴᴇᴅ ᴀʟʟ ᴍᴇꜱꜱᴀɢ"""
+    CAPTION = """
+<b>@KnMoviez <b>{file_name}</b>"""
+
+    IMDB_TEMPLATE_TXT = """
+<b>Query: {query}
+IMDb Data:
+
+🏷 Title: <a href={url}>{title}</a>
+🎭 Genres: {genres}
+📆 Year: <a href={url}/releaseinfo>{year}</a>
+🌟 Rating: <a href={url}/ratings>{rating}</a> / 10</b>"""
+
+    FLTERS_TXT = """
+<b>Hᴇʏ {}, Tʜᴇsᴇ ᴀʀᴇ ᴍʏ ᴛʜʀᴇᴇ ᴛʏᴘᴇs ᴏғ ғɪʟᴛᴇʀs.</b>"""
+    
+    FILE_STORE_TXT = """
+<b>Fɪʟᴇ sᴛᴏʀᴇ ɪs ᴛʜᴇ ғᴇᴀᴛᴜʀᴇ ᴡʜɪᴄʜ ᴡɪʟʟ ᴄʀᴇᴀᴛᴇ ᴀ sʜᴀʀᴇᴀʙʟᴇ ʟɪɴᴋ ᴏғ ᴀ sɪɴɢʟᴇ ᴏʀ ᴍᴜʟᴛɪᴘʟᴇ ғɪʟᴇs.</b>
+
+Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
+• /batch - <code>Tᴏ ᴄʀᴇᴀᴛᴇ ᴀ ʙᴀᴛᴄʜ ʟɪɴᴋ ᴏғ ᴍᴜʟᴛɪᴘʟᴇ ғɪʟᴇs.</code>
+• /link - <code>Tᴏ ᴄʀᴇᴀᴛᴇ ᴀ sɪɴɢʟᴇ ғɪʟᴇ sᴛᴏʀᴇ ʟɪɴᴋ.</code>
+• /pbatch - <code>Jᴜsᴛ ʟɪᴋᴇ /batch, ʙᴜᴛ ᴛʜᴇ ғɪʟᴇs ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ғᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴs.</code>
+• /plink - <code>Jᴜsᴛ ʟɪᴋᴇ /link, ʙᴜᴛ ᴛʜᴇ ғɪʟᴇ ᴡɪʟʟ ʙᴇ sᴇɴᴅ ᴡɪᴛʜ ғᴏʀᴡᴀʀᴅ ʀᴇsᴛʀɪᴄᴛɪᴏɴ.</code>"""
+    
+    GLOBAL_TXT = """ <b>Wᴇʟᴄᴏᴍᴇ ᴛᴏ Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs. Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs ᴀʀᴇ ᴛʜᴇ ғɪʟᴛᴇʀs sᴇᴛ ʙʏ ʙᴏᴛ ᴀᴅᴍɪɴs ᴡʜɪᴄʜ ᴡɪʟʟ ᴡᴏʀᴋ ᴏɴ ᴀʟʟ ɢʀᴏᴜᴘs.</b>
+   
+   Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
+• /gfilter - <code>Tᴏ ᴄʀᴇᴀᴛᴇ ᴀ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ.</code>
+• /gfilters - <code>Tᴏ ᴠɪᴇᴡ ᴀʟʟ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀs.</code>
+• /delg - <code>Tᴏ ᴅᴇʟᴇᴛᴇ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ɢʟᴏʙᴀʟ ғɪʟᴛᴇʀ.</code>
+• /delallg - <code>ᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀʟʟ ɢʟᴏʙᴀʟ ꜰɪʟᴛᴇʀꜱ.</code>"""
+   
     CONNECTION_TXT = """Help: <b>Connections</b>
 
 - Used to connect bot to PM for managing filters 
@@ -63,23 +187,34 @@ class script(object):
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
+    RENDERING_TXT = """
+⚡️ʟɪᴠᴇ sʏsᴛᴇᴍ sᴛᴀᴛᴜs ⚡️
+
+❂ ʀᴀᴍ ●●●●●●●◌◌◌
+✇ ᴄᴘᴜ ●●●●●●●◌◌◌
+✪ ᴅᴀᴛᴀ ᴛʀᴀꜰɪᴄs ●●●●◌◌◌◌◌◌ 🛰
+
+ᴠ2.7.1 [sᴛᴀʙʟᴇ] """
+    DICS_TXT = """ <b><code>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
+
+ᴀʟʟ ᴛʜᴇ ꜰɪʟᴇꜱ ɪɴ ᴛʜɪꜱ ʙᴏᴛ ᴀʀᴇ ꜰʀᴇᴇʟʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛʜᴇ ɪɴᴛᴇʀɴᴇᴛ ᴏʀ ᴘᴏꜱᴛᴇᴅ ʙʏ ꜱᴏᴍᴇʙᴏᴅʏ ᴇʟꜱᴇ. 
+ᴊᴜꜱᴛ ꜰᴏʀ ᴇᴀꜱʏ ꜱᴇᴀʀᴄʜɪɴɢ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ɪɴᴅᴇxɪɴɢꜰɪʟᴇꜱ ᴡʜɪᴄʜ ᴀʀᴇ ᴀʟʀᴇᴀᴅʏ ᴜᴘʟᴏᴀᴅᴇᴅ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ. 
+ᴡᴇ ʀᴇꜱᴘᴇᴄᴛ ᴀʟʟ ᴛʜᴇ ᴄᴏᴘʏʀɪɢʜᴛ ʟᴀᴡꜱ ᴀɴᴅ ᴡᴏʀᴋꜱ ɪɴ ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪᴛʜ ᴅᴍᴄᴀ ᴀɴᴅ ᴇᴜᴄᴅ. 
+ɪꜰ ᴀɴʏᴛʜɪɴɢ ɪꜱ ᴀɢᴀɪɴꜱᴛ ʟᴀᴡ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ꜱᴏ ᴛʜᴀᴛ ɪᴛ ᴄᴀɴ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ᴀꜱᴀᴘ. 
+ɪᴛ ɪꜱ ꜰᴏʀʙɪʙʙᴇɴ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ, ꜱᴛʀᴇᴀᴍ, ʀᴇᴘʀᴏᴅᴜᴄᴇ, ᴏʀ ʙʏ ᴀɴʏ ᴍᴇᴀɴꜱ, ꜱʜᴀʀᴇ, ᴏʀ ᴄᴏɴꜱᴜᴍᴇ, ᴄᴏɴᴛᴇɴᴛ ᴡɪᴛʜᴏᴜᴛ ᴇxᴘʟɪᴄɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ ꜰʀᴏᴍ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ ᴄʀᴇᴀᴛᴏʀ ᴏʀ ʟᴇɢᴀʟ ᴄᴏᴘʏʀɪɢʜᴛ ʜᴏʟᴅᴇʀ. 
+ɪꜰ ʏᴏᴜ ʙᴇʟɪᴇᴠᴇ ᴛʜɪꜱ ʙᴏᴛ ɪꜱ ᴠɪᴏʟᴀᴛɪɴɢ ʏᴏᴜʀ ɪɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ ᴘʀᴏᴘᴇʀᴛʏ, ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ ʀᴇꜱᴘᴇᴄᴛɪᴠᴇ ᴄʜᴀɴɴᴇʟꜱ ꜰᴏʀ ʀᴇᴍᴏᴠᴀʟ. 
+ᴛʜᴇ ʙᴏᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴏᴡɴ ᴀɴʏ ᴏꜰ ᴛʜᴇꜱᴇ ᴄᴏɴᴛᴇɴᴛꜱ, ɪᴛ ᴏɴʟʏ ɪɴᴅᴇx ᴛʜᴇ ꜰɪʟᴇꜱ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ. </code> """
+
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of ShobanaFilterBot
+these are the extra features of Tony Stark 
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>
-• /start - <code>Check I'm Alive.</code>
-• /ping - <code>check ping.</code>
-• /usage - <code>usage of bot.</code>
-• /info - <code>User info .</code>
-• /id - <code>User id  .</code>
-• /broadcast - <code>Broadcast (owner only).</code>
-"""
+• /search  - <code>get the film information from various sources.</code>"""
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
@@ -96,75 +231,62 @@ This module only works for my admins
 • /ban  - <code>to ban a user.</code>
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
- 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
- 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
- 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 
- 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> """
+• /broadcast - <code>to broadcast a message to all users</code>
+• /group_broadcast - <code>to broadcast a message to all groups</code>
+• /eval - <code>run python codes</code>
+• /sh - <code>install package or other use and code run</code>
+• /restart - <code>restart the bot</code>
+"""
+    ALRT_TXT = """Hᴇʟʟᴏ {},
+
+Tʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀ ʀᴇϙᴜᴇsᴛ.
+Rᴇϙᴜᴇsᴛ ʏᴏᴜʀsᴇʟғ...!!"""
+
+    OLD_ALRT_TXT = """Hey {},
+You are using one of old message,
+Request Again"""
+
+    CUDNT_FND = """<b>I ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ. Dɪᴅ ʏᴏᴜ ᴍᴇᴀɴ ᴀɴʏ ᴏɴᴇ ᴏғ ᴛʜᴇsᴇ?</b>"""
+
+    I_CUDNT = """<b>I ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.</b>"""
+
+    I_CUD_NT = """<b>I ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.</b>"""
+
+    MVE_NT_FND = """<b>I ᴄᴏᴜʟᴅɴ'ᴛ ғɪɴᴅ ᴀɴʏᴛʜɪɴɢ ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜᴀᴛ.</b>"""
+
+    TOP_ALRT_MSG = """Cʜᴇᴄᴋɪɴɢ ғᴏʀ ϙᴜᴇʀʏ ɪɴ Dᴀᴛᴀʙᴀsᴇ """
+    
+    NORSLTS = """
+#NoResults 
+
+ID <b>: {}</b>
+
+Name <b>: {}</b>
+
+Message <b>: {}</b>"""
+    
+    STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
+★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
+★ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂: <code>{}</code>
+★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
+★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
+    NORSLTS = """★ #𝗡𝗼𝗥𝗲𝘀𝘂𝗹𝘁𝘀 ★
+𝗜𝗗 <b>: {}</b>
+𝗡𝗮𝗺𝗲 <b>: {}</b>
+𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
 """
-    RESULT_TXT="""<blockquote> Hey,     </blockquote>
-<blockquote>Jᴜsᴛ Sᴇᴇ Wʜᴀᴛ I Found Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ </blockquote>"""
-
-    CUSTOM_FILE_CAPTION = """<pre><b>@KnMoviez {file_name} </b>
-</pre>"""
-
-    
-    RESTART_GC_TXT = """
-<b>𝖡𝗈𝗍 𝖱𝖾𝗌𝗍𝖺𝗋𝗍𝖾𝖽 !</b>
-
-📅 𝖣𝖺𝗍𝖾 : <code>{}</code>
-⏰ 𝖳𝗂𝗆𝖾 : <code>{}</code>
-🌐 𝖳𝗂𝗆𝖾𝗓𝗈𝗇𝖾 : <code>Asia/Kolkata</code>
-🛠️ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : <code>𝗏1 [ 𝖲𝗍able ]</code></b>"""
+    RESTART_TXT = """
+<b>Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ !
+📅 Dᴀᴛᴇ : <code>{}</code>
+⏰Tɪᴍᴇ : <code>{}</code>
+🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code></b>"""
     
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
 Name - {}
 """
-    SPOLL_NOT_FND="""
-I couldn't find anything related to your request. 
-Try reading the instruction below 
-<blockquote>
-1️ Ask in Correct Spelling
-2️ Don't ask Movies which are not Realased on OTT PLATFORMS
-3️ Possible  ASK [movie name langauge] like this or [movie year] </blockquote>
-OR
-<b> Tʜɪs Mᴏᴠɪᴇ Is Nᴏᴛ Aᴅᴅᴇᴅ Tᴏ DB</b>
-<pre>Report To ADMIN BY USING /bugs command </pre> 
-    """
-#SPELL CHECK LANGUAGES TO KNOW callback
-    ENG_SPELL="""Please Note Below📓
-1️⃣ Ask in Correct Spelling
-2️⃣ Don't ask Movies which are not Realased on OTT PLATFORMS
-3️⃣ Possible  ASK [movie name langauge] like this or [movie year]
-    """
-    MAL_SPELL="""ദയവായി താഴെ ശ്രദ്ധിക്കുക📓
-1️⃣ ശരിയായ അക്ഷരവിന്യാസത്തിൽ ചോദിക്കുക
-2️⃣ OTT പ്ലാറ്റ്‌ഫോമുകളിൽ റിലീസ് ചെയ്യാത്ത സിനിമകൾ ചോദിക്കരുത്
-3️⃣ ഇത് പോലെ [സിനിമയുടെ പേര് ഭാഷ] അല്ലെങ്കിൽ [സിനിമ വർഷം] ചോദിക്കാം
-    """
-    HIN_SPELL="""कृपया नीचे ध्यान दें📓
-1️⃣ सही वर्तनी में पूछें
-2️⃣ उन फिल्मों के बारे में न पूछें जो ओटीटी प्लेटफॉर्म पर रिलीज नहीं हुई हैं
-3️⃣ संभव है पूछें [मूवी का नाम भाषा] इस तरह या [मूवी वर्ष]
-    """
-    TAM_SPELL="""கீழே கவனிக்கவும்📓
-1️⃣ சரியான எழுத்துப்பிழையில் கேளுங்கள்
-2️⃣ வெளியாகாத திரைப்படங்களைக் கேட்காதீர்கள்
-3️⃣ இந்த வடிவத்தில் கேளுங்கள் [திரைப்படத்தின் பெயர், ஆண்டு]
-    """
-
-    CHK_MOV_ALRT="""♻️ ᴄʜᴇᴄᴋɪɴɢ ꜰɪʟᴇ ᴏɴ ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ... ♻️"""
-    
-    OLD_MES=""" 𝐘𝐨𝐮 𝐚𝐫𝐞 𝐮𝐬𝐢𝐧𝐠 𝐨𝐧𝐞 𝐨𝐟 𝐦𝐲 𝐨𝐥𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬🤔, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐬𝐞𝐧𝐝 𝐭𝐡𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐚𝐠𝐚𝐢𝐧"""
-    
-    MOV_NT_FND="""<b>Tʜɪs Mᴏᴠɪᴇ Is Nᴏᴛ Yᴇᴛ Rᴇᴀʟᴇsᴇᴅ Oʀ Aᴅᴅᴇᴅ Tᴏ DB</b>
-<pre>Report To ADMIN BY USING /bugs command </pre> 
-"""
-    RESTART_TXT = """
-<b><u>𝖡𝗈𝗍 𝖱𝖾𝗌𝗍𝖺𝗋𝗍𝖾𝖽 ✅</u></b>"""
+  
